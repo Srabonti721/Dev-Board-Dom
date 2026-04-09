@@ -22,6 +22,13 @@
         .text-color {
             color: #00303C;
         }
+        .style{
+            background-color: gainsboro;
+            padding: 4px;
+            border-radius: 4px;
+           margin: 10px 5px 10px 5px;
+        }
+        /*  class="bg-gray-200 p-4 m-2 rounded-lg" */
     </style>
 </head>
 
@@ -35,7 +42,7 @@
             <div class="navbar-end ">
                 <div class="flex justify-center items-center p-2 bg-gray-200 rounded-full">
                     <img src="assets/checkbox.png" alt="">
-                    <h3 class="text-xl px-2 ">23</h3>
+                    <h3 id="total-number" class="text-xl px-2 ">23</h3>
                 </div>
                 <img class="mx-4 p-2 bg-gray-200 rounded-full" src="assets/theme-btn.png" alt="">
             </div>
@@ -51,7 +58,7 @@
                     </div>
                     <div class="px-4">
                         <h3 class="text-color">Task Assigned </h3>
-                        <p>6</p>
+                        <p id="task-number">6</p>
                     </div>
                 </div>
                 <!-- button 2 -->
@@ -79,7 +86,7 @@
                 <div class=" bg-gray-200 shadow-sm rounded-lg ">
                     <div class="p-4 space-y-2">
                         <span class="bg-base-200 p-2 rounded-md text-color ">ShopEase</span>
-                        <h2 class="text-xl text-color my-4">Fix Mobile Button Issue </h2>
+                        <h2 id="fix-mobile-title" class="text-xl text-color my-4">Fix Mobile Button Issue </h2>
                         <p class="bg-base-200 p-2 rounded-md text-sm">Debug using Chrome DevTools, check for overlapping
                             elements, and ensure onClick works properly and ensure onClick works properly</p>
 
@@ -88,7 +95,7 @@
                                 <h2>Deadline</h2>
                                 <p class="text-color">march 21 2026</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="complete-btn1" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -96,7 +103,7 @@
                 <div class=" bg-gray-200 shadow-sm rounded-lg ">
                     <div class="p-4 space-y-2">
                         <span class="bg-base-200 p-2 rounded-md text-color ">CloudSync</span>
-                        <h2 class="text-xl text-color my-4">Add Dark Mode</h2>
+                        <h2 id="dark-mode" class="text-xl text-color my-4">Add Dark Mode</h2>
                         <p class="bg-base-200 p-2 rounded-md text-sm">Store the user's preference in localStorage,
                             update CSS variables dynamically, and apply a smooth transition effect.</p>
 
@@ -105,7 +112,7 @@
                                 <h2>Deadline</h2>
                                 <p class="text-color">march 21 2026</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="complete-btn2" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -113,7 +120,7 @@
                 <div class=" bg-gray-200 shadow-sm rounded-lg ">
                     <div class="p-4 space-y-2">
                         <span class="bg-base-200 p-2 rounded-md text-color ">SwiftPay</span>
-                        <h2 class="text-xl text-color my-4">Optimize Home page </h2>
+                        <h2 id="Optimize" class="text-xl text-color my-4">Optimize Home page </h2>
                         <p class="bg-base-200 p-2 rounded-md text-sm">Debug using Chrome DevTools, check for overlapping
                             elements, and ensure onClick works properly</p>
 
@@ -122,7 +129,7 @@
                                 <h2>Deadline</h2>
                                 <p class="text-color">march 21 2026</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="complete-btn3" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -130,7 +137,7 @@
                 <div class=" bg-gray-200 shadow-sm rounded-lg ">
                     <div class="p-4 space-y-2">
                         <span class="bg-base-200 p-2 rounded-md text-color ">Meta</span>
-                        <h2 class="text-xl text-color my-4">Add new emoji 🤲</h2>
+                        <h2 id="emoji" class="text-xl text-color my-4">Add new emoji 🤲</h2>
                         <p class="bg-base-200 p-2 rounded-md text-sm">Debug using Chrome DevTools, check for overlapping
                             elements, and ensure onClick works properly and ensure onClick works properly</p>
 
@@ -139,7 +146,7 @@
                                 <h2>Deadline</h2>
                                 <p class="text-color">march 21 2026</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="complete-btn4" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -147,7 +154,7 @@
                 <div class=" bg-gray-200 shadow-sm rounded-lg ">
                     <div class="p-4 space-y-2">
                         <span class="bg-base-200 p-2 rounded-md text-color ">Google LLC</span>
-                        <h2 class="text-xl text-color my-4">Integrate OpenAI API </h2>
+                        <h2 id="Integrate" class="text-xl text-color my-4">Integrate OpenAI API </h2>
                         <p class="bg-base-200 p-2 rounded-md text-sm">Debug using Chrome DevTools, check for overlapping
                             elements, and ensure onClick works properly and ensure onClick works properly</p>
 
@@ -156,7 +163,7 @@
                                 <h2>Deadline</h2>
                                 <p class="text-color">march 21 2026</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="complete-btn5" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -164,7 +171,7 @@
                 <div class=" bg-gray-200 shadow-sm rounded-lg ">
                     <div class="p-4 space-y-2">
                         <span class="bg-base-200 p-2 rounded-md text-color ">Glassdoar</span>
-                        <h2 class="text-xl text-color my-4">Improve Job searching </h2>
+                        <h2 id="Improve" class="text-xl text-color my-4">Improve Job searching </h2>
                         <p class="bg-base-200 p-2 rounded-md text-sm">Debug using Chrome DevTools, check for overlapping
                             elements, and ensure onClick works properly and ensure onClick works properly</p>
 
@@ -173,7 +180,7 @@
                                 <h2>Deadline</h2>
                                 <p class="text-color">march 21 2026</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="complete-btn6" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -188,8 +195,14 @@
                 </div>
                 <button class="btn btn-primary">Clear History</button>
             </div>
+            <div id="add-list">
+
+            </div>
         </section>
     </section>
+    <script src="script/utility.js"></script>
+    <script src="script/complete.js"></script>
+
 </body>
 
 </html>
