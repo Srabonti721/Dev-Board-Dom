@@ -36,3 +36,8 @@ function completedButton(title, btnCompleted) {
 document.getElementById("discover").addEventListener ("click", function(){
     window.location.href = "./question.html"   
 })
+// random color btn
+document.getElementById("bg-color-btn").addEventListener("click", function(event){
+const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = randomColor;
+})
