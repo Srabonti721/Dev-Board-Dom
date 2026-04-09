@@ -32,3 +32,7 @@ function completedButton(title, btnCompleted) {
         console.log("invalid value");
     }
 }
+// discover button
+document.getElementById("discover").addEventListener ("click", function(){
+    window.location.href = "./question.html"   
+})
