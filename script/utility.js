@@ -12,9 +12,9 @@ function completedButton(title, btnCompleted) {
     alert("Board update successfully");
     const taskNumber = getIdBYConvertedValue("task-number");
     const totalNumber = getIdBYConvertedValue("total-number");
-    if (taskNumber > 0 && totalNumber >= 23) {
+    if (taskNumber >= 0 && totalNumber >= 23) {
         const add = taskNumber - 1;
-         const diff= totalNumber + 1;
+        const diff = totalNumber + 1;
         setInnerTextByIdAndValue("task-number", add)
         setInnerTextByIdAndValue("total-number", diff);
         //   add massage
@@ -22,22 +22,27 @@ function completedButton(title, btnCompleted) {
         const p = document.createElement("p");
         p.classList.add("style");
         p.innerText = `
-      You have completed the task ${title} at 
+      You have completed the task ${title} at ${time()}
      `
         addListContainer.appendChild(p);
+
         // btn Disabled
-        btnCompleted.setAttribute("disabled", false)
+        btnCompleted.setAttribute("disabled", false);
+        if (taskNumber === 1) {
+            alert("congratulation!!! you have completed all the current task")
+        }
     }
     else {
         console.log("invalid value");
     }
 }
+
 // discover button
-document.getElementById("discover").addEventListener ("click", function(){
-    window.location.href = "./question.html"   
+document.getElementById("discover").addEventListener("click", function () {
+    window.location.href = "./question.html"
 })
 // random color btn
-document.getElementById("bg-color-btn").addEventListener("click", function(event){
-const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-  document.body.style.backgroundColor = randomColor;
+document.getElementById("bg-color-btn").addEventListener("click", function (event) {
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    document.body.style.backgroundColor = randomColor;
 })
